@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PracticeBlog</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <h1>This is on every page</h1>
+  	<a href="/">Home</a>
+    <a href="/sign_in">Sign In</a>
+    <a href="/edit">Edit</a>
+    <%= yield %>
+   
+  </body>
+</html>
